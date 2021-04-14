@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>main</name>
+			<type>2</type>
+			<location>C:/Users/y3013/Desktop/java/SpringStudy/Spring5Study/src/main</location>
+		</link>
+	</linkedResources>
 </projectDescription>
