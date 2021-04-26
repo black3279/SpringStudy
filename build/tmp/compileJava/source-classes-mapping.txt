@@ -1,16 +1,60 @@
-com/main/HelloWorldDecoupledWithFactory.java
- com.main.HelloWorldDecoupledWithFactory
+com/configuration/MessageRenderer.java
+ com.configuration.MessageRenderer
+com/annotation/HelloWorldMessageProvider.java
+ com.annotation.HelloWorldMessageProvider
+com/configuration/MessageProvider.java
+ com.configuration.MessageProvider
+com/configuration/HelloWorldMessageProvider.java
+ com.configuration.HelloWorldMessageProvider
 com/main/HelloWorldSpringDI.java
  com.main.HelloWorldSpringDI
+com/annotation/MessageRenderer.java
+ com.annotation.MessageRenderer
 com/main/MessageRenderer.java
  com.main.MessageRenderer
-com/main/MessageProvider.java
- com.main.MessageProvider
+com/annotation/MessageProvider.java
+ com.annotation.MessageProvider
+com/annotation/DeclareSpringComponents.java
+ com.annotation.DeclareSpringComponents
+com/annotation/StandardOutMessageRenderer.java
+ com.annotation.StandardOutMessageRenderer
+com/container/Dependency.java
+ com.container.Dependency
+com/configuration/HelloWorldConfiguration.java
+ com.configuration.HelloWorldConfiguration
 com/main/HelloWorldDecoupled.java
  com.main.HelloWorldDecoupled
-com/main/StandardOutMessageRenderer.java
- com.main.StandardOutMessageRenderer
 com/main/MessageSupportFactory.java
  com.main.MessageSupportFactory
 com/main/HelloWorldMessageProvider.java
  com.main.HelloWorldMessageProvider
+com/container/SetterInjection.java
+ com.container.SetterInjection
+com/container/Container.java
+ com.container.Container
+com/main/HelloWorldDecoupledWithFactory.java
+ com.main.HelloWorldDecoupledWithFactory
+com/container/ContextualizedDependencyLookup.java
+ com.container.ContextualizedDependencyLookup
+com/container/ConstructorInjection.java
+ com.container.ConstructorInjection
+com/container/ManagedComponent.java
+ com.container.ManagedComponent
+com/main/MessageProvider.java
+ com.main.MessageProvider
+com/configuration/StandardOutMessageRenderer.java
+ com.configuration.StandardOutMessageRenderer
+com/main/StandardOutMessageRenderer.java
+ com.main.StandardOutMessageRenderer
+com/autowired/HelloWorldMessageProvider.java
+ com.autowired.HelloWorldMessageProvider
+com/autowired/DeclareSpringComponents.java
+ com.autowired.DeclareSpringComponents
+com/autowired/StandardOutMessageRenderer.java
+ com.autowired.StandardOutMessageRenderer
+com/autowired/MessageProvider.java
+ com.autowired.MessageProvider
+com/autowired/MessageRenderer.java
+ com.autowired.MessageRenderer
+com/autowired/ConfigurableMessageProvider.java
+ com.autowired.ConfigurableMessageProvider
