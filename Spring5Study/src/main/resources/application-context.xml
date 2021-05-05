@@ -5,45 +5,70 @@
 	xmlns:util="http://www.springframework.org/schema/util"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	   xmlns:c="http://www.springframework.org/schema/c"
+	   xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<bean id = "constructorConfusion"
+	<bean id = "injectSimpleConfig"
+		  class = "com.SpEL.InjectSimpleConfig" />
+	<bean id = "injectSimpleSpel"
+		  class="com.SpEL.InjectSimpleSpel"
+		  p:name="#{injectSimpleConfig.name}"
+		  p:age="#{injectSimpleConfig.age + 1}"
+		  p:height="#{injectSimpleConfig.height}"
+		  p:programmer="#{injectSimpleConfig.programmer}"
+		  p:ageInSeconds="#{injectSimpleConfig.ageInSeconds}" />
+
+	<!--InjectSimple-->
+	<!--<bean id = "injectSimple"
+		  class="com.fieldInjection.InjectSimple"
+		  p:name="이경진"
+		  p:age="20"
+		  p:height="190"
+		  p:programmer="false"
+		  p:ageInSeconds="777777" />-->
+
+	<!--fieldInjection-->
+	<!--<context:component-scan
+			base-package="com.fieldInjection"/>-->
+
+	<!--constructorConfusion2-->
+	<!--<bean id = "constructorConfusion"
 		  class="com.confusion.ConstructorConfusion">
 	<constructor-arg type="int">
 		<value>90</value>
 	</constructor-arg>
-	</bean>
+	</bean>-->
 
-	<!-- constructorConfusion1
-	<bean id = "constructorConfusion"
+	 <!--constructorConfusion1-->
+	<!--<bean id = "constructorConfusion"
 		  class="com.confusion.ConstructorConfusion">
 		<constructor-arg>
 			<value>90</value>
 		</constructor-arg>
 	</bean>-->
 
-	<!-- autowired2
-	<bean id="provider"
+	<!-- autowired2-->
+	<!--<bean id="provider"
 		  class="com.autowired.ConfigurableMessageProvider"
 		  c:message="I hope that someone gets my message in a bottle"/>-->
 
-	<!-- autowired1
-	<context:component-scan
+	 <!--autowired1-->
+	<!--<context:component-scan
 			base-package="com.autowired"/>
 	<bean id="message" class="java.lang.String"
-		  c:_0="I hope that someone gets my message in a bottle" />-->
+		  c:_0="i hope that someone gets my message in a bottle" />-->
 
-	<!-- annotation
-	<context:component-scan
+	 <!--annotation-->
+	<!--<context:component-scan
 		base-package="com.annotation"/>-->
-	<!-- main
-	<bean id="provider"
-		class="com.main.HelloWorldMessageProvider" />
+	 <!--main-->
+	<!--<bean id="provider"
+		  class="com.main.HelloWorldMessageProvider" />
 	<bean id="renderer"
-		class="com.main.StandardOutMessageRenderer" />
-	-->
-	
+		  class="com.main.StandardOutMessageRenderer"
+		  p:messageProvider-ref="provider" />-->
+
 </beans>

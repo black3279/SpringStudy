@@ -2,9 +2,10 @@ package com.autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service("provider")
+@Component("provider")
 public class ConfigurableMessageProvider implements MessageProvider {
     private String message;
 
