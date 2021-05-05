@@ -2,12 +2,14 @@ com/annotation/HelloWorldMessageProvider.java
  com.annotation.HelloWorldMessageProvider
 com/main/HelloWorldSpringDI.java
  com.main.HelloWorldSpringDI
+com/fieldInjection/Singer.java
+ com.fieldInjection.Singer
 com/annotation/DeclareSpringComponents.java
  com.annotation.DeclareSpringComponents
 com/autowired/DeclareSpringComponents.java
  com.autowired.DeclareSpringComponents
-com/autowired/StandardOutMessageRenderer.java
- com.autowired.StandardOutMessageRenderer
+com/confusion/ConstructorConfusion.java
+ com.confusion.ConstructorConfusion
 com/container/Dependency.java
  com.container.Dependency
 com/autowired/HelloWorldMessageProvider.java
@@ -22,6 +24,8 @@ com/container/Container.java
  com.container.Container
 com/main/HelloWorldDecoupledWithFactory.java
  com.main.HelloWorldDecoupledWithFactory
+com/fieldInjection/FieldInjection.java
+ com.fieldInjection.FieldInjection
 com/container/ContextualizedDependencyLookup.java
  com.container.ContextualizedDependencyLookup
 com/container/ConstructorInjection.java
@@ -30,8 +34,12 @@ com/autowired/ConfigurableMessageProvider.java
  com.autowired.ConfigurableMessageProvider
 com/main/MessageProvider.java
  com.main.MessageProvider
+com/SpEL/InjectSimpleConfig.java
+ com.SpEL.InjectSimpleConfig
 com/main/StandardOutMessageRenderer.java
  com.main.StandardOutMessageRenderer
+com/fieldInjection/Inspiration.java
+ com.fieldInjection.Inspiration
 com/configuration/MessageRenderer.java
  com.configuration.MessageRenderer
 com/configuration/MessageProvider.java
@@ -40,6 +48,8 @@ com/configuration/HelloWorldMessageProvider.java
  com.configuration.HelloWorldMessageProvider
 com/annotation/MessageRenderer.java
  com.annotation.MessageRenderer
+com/fieldInjection/InjectSimple.java
+ com.fieldInjection.InjectSimple
 com/main/MessageRenderer.java
  com.main.MessageRenderer
 com/annotation/MessageProvider.java
@@ -54,9 +64,11 @@ com/main/HelloWorldDecoupled.java
  com.main.HelloWorldDecoupled
 com/main/HelloWorldMessageProvider.java
  com.main.HelloWorldMessageProvider
+com/SpEL/InjectSimpleSpel.java
+ com.SpEL.InjectSimpleSpel
 com/container/ManagedComponent.java
  com.container.ManagedComponent
 com/configuration/StandardOutMessageRenderer.java
  com.configuration.StandardOutMessageRenderer
-com/confusion/ConstructorConfusion.java
- com.confusion.ConstructorConfusion
+com/autowired/StandardOutMessageRenderer.java
+ com.autowired.StandardOutMessageRenderer

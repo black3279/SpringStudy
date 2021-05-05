@@ -9,7 +9,6 @@ public class HelloWorldSpringDI {
            ("/application-context.xml");
 
         MessageRenderer mr = ctx.getBean("renderer", MessageRenderer.class);
-        mr.setMessageProvider(ctx.getBean("provider", MessageProvider.class));
         mr.render();
     }
 }

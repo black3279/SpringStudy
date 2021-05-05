@@ -1,7 +1,11 @@
 package com.confusion;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.stereotype.Service;
 
+@Service("constructionConfusion")
 public class ConstructorConfusion {
 
     private String someValue;
@@ -11,6 +15,7 @@ public class ConstructorConfusion {
         this.someValue=someValue;
     }
 
+    @Autowired
     public ConstructorConfusion(int someValue){
         System.out.println("ConstructorConfusion(int) 호출");
         this.someValue="숫자 값 : " + Integer.toString(someValue);
