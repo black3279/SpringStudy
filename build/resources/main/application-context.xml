@@ -11,7 +11,17 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<bean id = "injectSimpleConfig"
+	<bean id = "oracle" name="wiseworm"
+		  class="com.SpEL.BookwormOracle" />
+	<bean id="injectRef"
+		  class="com.SpEL.InjectRef">
+		<property name="oracle">
+			<ref bean="oracle" />
+		</property>
+	</bean>
+
+	<!--InjectSimpleConfig-->
+	<!--<bean id = "injectSimpleConfig"
 		  class = "com.SpEL.InjectSimpleConfig" />
 	<bean id = "injectSimpleSpel"
 		  class="com.SpEL.InjectSimpleSpel"
@@ -19,7 +29,7 @@
 		  p:age="#{injectSimpleConfig.age + 1}"
 		  p:height="#{injectSimpleConfig.height}"
 		  p:programmer="#{injectSimpleConfig.programmer}"
-		  p:ageInSeconds="#{injectSimpleConfig.ageInSeconds}" />
+		  p:ageInSeconds="#{injectSimpleConfig.ageInSeconds}" />-->
 
 	<!--InjectSimple-->
 	<!--<bean id = "injectSimple"

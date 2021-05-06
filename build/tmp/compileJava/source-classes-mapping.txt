@@ -72,3 +72,7 @@ com/configuration/StandardOutMessageRenderer.java
  com.configuration.StandardOutMessageRenderer
 com/autowired/StandardOutMessageRenderer.java
  com.autowired.StandardOutMessageRenderer
+com/SpEL/HierarchicalAppContextUsage.java
+ com.SpEL.HierarchicalAppContextUsage
+com/SpEL/Song.java
+ com.SpEL.Song
