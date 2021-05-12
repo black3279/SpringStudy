@@ -76,3 +76,11 @@ com/SpEL/HierarchicalAppContextUsage.java
  com.SpEL.HierarchicalAppContextUsage
 com/SpEL/Song.java
  com.SpEL.Song
+com/collection/LyricHolder.java
+ com.collection.LyricHolder
+com/collection/LyricHolder2.java
+ com.collection.LyricHolder2
+com/collection/CollectionInjection.java
+ com.collection.CollectionInjection
+com/collection/CollectionInjection2.java
+ com.collection.CollectionInjection2

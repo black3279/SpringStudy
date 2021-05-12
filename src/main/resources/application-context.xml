@@ -11,7 +11,32 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<bean id="lyricHolder"
+
+	<context:component-scan base-package="com.collection"/>
+
+	<util:map id="map" map-class="java.util.HashMap">
+		<entry key="someValue" value="It's a Friday, we finally made it" />
+		<entry key="someBean" value-ref="lyricHolder" />
+	</util:map>
+
+	<util:properties id="props">
+		<prop key="firstName">John</prop>
+		<prop key="secondName">Mayer</prop>
+	</util:properties>
+
+	<util:set id="set" set-class="java.util.HashSet">
+		<value>I can't believe I get to see your face</value>
+		<ref bean="lyricHolder"/>
+	</util:set>
+
+	<util:list id="list" list-class="java.util.ArrayList">
+		<value>I can't believe i get to see your face</value>
+		<ref bean="lyricHolder"/>
+	</util:list>
+
+
+	<!--Collection-->
+	<!--<bean id="lyricHolder"
 		  class="com.collection.LyricHolder" />
 	<bean id="injectCollection"
 		  class="com.collection.CollectionInjection">
@@ -43,7 +68,7 @@
 				<ref bean="lyricHolder"/>
 			</list>
 		</property>
-	</bean>
+	</bean>-->
 
 	<!--SpEL-->
 	<!--<bean id = "oracle" name="wiseworm"
