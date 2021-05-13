@@ -84,3 +84,13 @@ com/collection/CollectionInjection.java
  com.collection.CollectionInjection
 com/collection/CollectionInjection2.java
  com.collection.CollectionInjection2
+com/collection/AbstractLookupDemoBean.java
+ com.collection.AbstractLookupDemoBean
+com/collection/LookupDemo.java
+ com.collection.LookupDemo
+com/collection/StandardLookupDemoBean.java
+ com.collection.StandardLookupDemoBean
+com/collection/Singer.java
+ com.collection.Singer
+com/collection/DemoBean.java
+ com.collection.DemoBean
