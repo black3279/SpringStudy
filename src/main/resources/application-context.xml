@@ -11,7 +11,10 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<bean id="singer" class="com.collection.Singer"
+	<context:component-scan base-package="com.collection2" />
+
+	<!--Collection1-3-->
+	<!--<bean id="singer" class="com.collection.Singer"
 		  scope="prototype" />
 
 	<bean id="abstractLookupBean"
@@ -22,9 +25,9 @@
 	<bean id="standardLookupBean"
 		  class="com.collection.StandardLookupDemoBean">
 		<property name="mySinger" ref="singer" />
-	</bean>
+	</bean>-->
 
-	<!--Collection2-->
+	<!--Collection1-2-->
 	<!--<context:component-scan base-package="com.collection"/>
 
 	<util:map id="map" map-class="java.util.HashMap">
@@ -48,7 +51,7 @@
 	</util:list>-->
 
 
-	<!--Collection-->
+	<!--Collection1-1-->
 	<!--<bean id="lyricHolder"
 		  class="com.collection.LyricHolder" />
 	<bean id="injectCollection"
