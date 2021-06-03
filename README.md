@@ -41,4 +41,4 @@
 
 ## NOTION URL
 - https://www.notion.so/5-5-27abef4113b84399bb9018c321f473e3
-- https://www.notion.so/5-5-ver-2-95dce3d63b9b4eb6adbb5e07772af5ad (Updated 21/05/25)
+- https://www.notion.so/5-5-ver-2-95dce3d63b9b4eb6adbb5e07772af5ad
